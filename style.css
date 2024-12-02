@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.labirint {
+  width: 700px;
+  height: 700px;
+  background-image: url("./images/labirint.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.student {
+  height: 50px;
+  width: 25px;
+  background-image: url("./images/student.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: translate(0px , -24px);
+  animation-name: student-animation;
+  animation-duration: 10s;
+}
+
+/* @keyframes student-animation {
+  12.5% {
+    transform: translate(-120px , -24px);
+  }
+
+  25% {
+    transform: translate(-116px, -122px);
+  }
+  37.5%{
+    transform: translate(-175px, -123px);
+  }
+  50%{
+    transform: translate(-175px, -20px);
+  }
+  62.5%{
+    transform: translate(-227px, -20px);
+  }
+  75%{
+    transform: translate(-227px, 230px);
+  }
+  87.5%{
+    transform: translate(158px, 230px);
+  }
+  100%{
+    transform: translate(158px, 300px);
+  }
+} */
+@keyframes student-animation{
+    5%{
+        transform: translate(0px, 24px);
+    }
+    10%{
+        transform: translate(-72px, 24px);  
+    }
+    15%{
+        transform: translate(-72px, 75px);
+    }
+    20%{
+        transform: translate(79px, 70px);
+    }
+    25%{
+        transform: translate(79px, -81px);
+    }
+    30%{
+        transform: translate(10px, -81px);
+    }
+    35%{
+        transform: translate(10px, -130px);
+    }
+    40%{
+        transform: translate(135px, -130px);
+    }
+    45%{
+        transform: translate(135px, 124px);
+    }
+    50%{
+        transform: translate(-125px, 124px);
+    }
+    55%{
+        transform: translate(-125px, 64px);
+    }
+    60%{
+        transform: translate(-177px, 65px);  
+    }
+    65%{
+        transform: translate(-177px, 178px);
+    }
+    70%{
+        transform: translate(182px, 178px);
+    }
+    75%{
+        transform: translate(182px, 178px);
+    }
+    80%{
+        transform: translate(187px, -184px);
+    }
+    85%{
+      transform: translate(-100px, -184px);
+    }
+    90%{
+      transform: translate(-100px, -297px);
+    }
+}
